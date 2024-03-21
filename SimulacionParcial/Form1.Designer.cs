@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridViewDatos = new System.Windows.Forms.DataGridView();
             this.btnMostrarDatos = new System.Windows.Forms.Button();
+            this.btnOrdenarMayor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTemperatura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDatos)).BeginInit();
@@ -175,11 +176,22 @@
             this.btnMostrarDatos.UseVisualStyleBackColor = true;
             this.btnMostrarDatos.Click += new System.EventHandler(this.btnMostrarDatos_Click);
             // 
+            // btnOrdenarMayor
+            // 
+            this.btnOrdenarMayor.Location = new System.Drawing.Point(1030, 323);
+            this.btnOrdenarMayor.Name = "btnOrdenarMayor";
+            this.btnOrdenarMayor.Size = new System.Drawing.Size(106, 41);
+            this.btnOrdenarMayor.TabIndex = 14;
+            this.btnOrdenarMayor.Text = "Ordenar Ascendente";
+            this.btnOrdenarMayor.UseVisualStyleBackColor = true;
+            this.btnOrdenarMayor.Click += new System.EventHandler(this.btnOrdenarMayor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 585);
+            this.Controls.Add(this.btnOrdenarMayor);
             this.Controls.Add(this.btnMostrarDatos);
             this.Controls.Add(this.dataGridViewDatos);
             this.Controls.Add(this.label5);
@@ -221,6 +233,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridViewDatos;
         private System.Windows.Forms.Button btnMostrarDatos;
+        private System.Windows.Forms.Button btnOrdenarMayor;
     }
 }
 

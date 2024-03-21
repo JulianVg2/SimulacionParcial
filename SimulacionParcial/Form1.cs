@@ -116,5 +116,14 @@ namespace SimulacionParcial
             dataGridViewDatos.Refresh();
 
         }
+
+        private void btnOrdenarMayor_Click(object sender, EventArgs e)
+        {
+            dataGridViewDatos.DataSource = null;
+            datosdepartamentoslista = datosdepartamentoslista.OrderBy(p => p.Grados).ToList();
+            dataGridViewDatos.DataSource = null;
+            dataGridViewDatos.DataSource = datosdepartamentoslista;
+            dataGridViewDatos.Refresh();
+        }
     }
 }
