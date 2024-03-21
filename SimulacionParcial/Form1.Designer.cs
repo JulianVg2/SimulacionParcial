@@ -43,6 +43,8 @@
             this.dataGridViewDatos = new System.Windows.Forms.DataGridView();
             this.btnMostrarDatos = new System.Windows.Forms.Button();
             this.btnOrdenarMayor = new System.Windows.Forms.Button();
+            this.btnPromedio = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTemperatura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDatos)).BeginInit();
@@ -186,11 +188,31 @@
             this.btnOrdenarMayor.UseVisualStyleBackColor = true;
             this.btnOrdenarMayor.Click += new System.EventHandler(this.btnOrdenarMayor_Click);
             // 
+            // btnPromedio
+            // 
+            this.btnPromedio.Location = new System.Drawing.Point(928, 394);
+            this.btnPromedio.Name = "btnPromedio";
+            this.btnPromedio.Size = new System.Drawing.Size(95, 42);
+            this.btnPromedio.TabIndex = 15;
+            this.btnPromedio.Text = "Mostrar Promedio";
+            this.btnPromedio.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(1052, 394);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "label6";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 585);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnPromedio);
             this.Controls.Add(this.btnOrdenarMayor);
             this.Controls.Add(this.btnMostrarDatos);
             this.Controls.Add(this.dataGridViewDatos);
@@ -234,6 +256,8 @@
         private System.Windows.Forms.DataGridView dataGridViewDatos;
         private System.Windows.Forms.Button btnMostrarDatos;
         private System.Windows.Forms.Button btnOrdenarMayor;
+        private System.Windows.Forms.Button btnPromedio;
+        private System.Windows.Forms.Label label6;
     }
 }
 

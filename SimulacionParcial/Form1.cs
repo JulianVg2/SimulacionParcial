@@ -91,12 +91,14 @@ namespace SimulacionParcial
             datosdepartamento.NoIde = int.Parse(txtNumeroIde.Text);
             datosdepartamento.Grados = decimal.Parse(txtTemperatura.Text);
             datosdepartamentoslista.Add(datosdepartamento);
-            GuardarDepartamentos();
+            GuardarTemperaturas();
             MostrarTemperaturas();
         }
 
         private void btnMostrarDatos_Click(object sender, EventArgs e)
         {
+            dataGridViewDatos.DataSource = null;
+            reportelista.Clear();
             foreach (Departamentos departamentos in departamentoslista)
             {
                 DatosDepartamentos datosDepartamentos = datosdepartamentoslista.FirstOrDefault(p => p.NoIde == departamentos.NoIde);
