@@ -15,6 +15,7 @@ namespace SimulacionParcial
     {
         List<Departamentos> departamentoslista = new List<Departamentos>();
         List<DatosDepartamentos> datosdepartamentoslista = new List<DatosDepartamentos>();
+        List<Reporte> reportelista = new List<Reporte>();
         public Form1()
         {
             InitializeComponent();
@@ -92,6 +93,28 @@ namespace SimulacionParcial
             datosdepartamentoslista.Add(datosdepartamento);
             GuardarDepartamentos();
             MostrarTemperaturas();
+        }
+
+        private void btnMostrarDatos_Click(object sender, EventArgs e)
+        {
+            foreach (Departamentos departamentos in departamentoslista)
+            {
+                DatosDepartamentos datosDepartamentos = datosdepartamentoslista.FirstOrDefault(p => p.NoIde == departamentos.NoIde);
+                if (datosDepartamentos != null)
+                {
+                    Reporte reporte = new Reporte
+                    {
+                         Nombre = departamentos.Nombre,
+                         Grados = datosDepartamentos.Grados,
+                    };
+                    reportelista.Add(reporte);
+                }
+            }
+
+            dataGridViewDatos.DataSource = null;
+            dataGridViewDatos.DataSource = reportelista;
+            dataGridViewDatos.Refresh();
+
         }
     }
 }

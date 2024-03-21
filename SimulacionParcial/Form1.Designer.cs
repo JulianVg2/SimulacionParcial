@@ -40,8 +40,11 @@
             this.btnIngresoTemperatura = new System.Windows.Forms.Button();
             this.DataGridViewTemperatura = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
+            this.dataGridViewDatos = new System.Windows.Forms.DataGridView();
+            this.btnMostrarDatos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTemperatura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -152,11 +155,33 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Temperatura Registrada";
             // 
+            // dataGridViewDatos
+            // 
+            this.dataGridViewDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDatos.Location = new System.Drawing.Point(925, 138);
+            this.dataGridViewDatos.Name = "dataGridViewDatos";
+            this.dataGridViewDatos.RowHeadersWidth = 51;
+            this.dataGridViewDatos.RowTemplate.Height = 24;
+            this.dataGridViewDatos.Size = new System.Drawing.Size(373, 178);
+            this.dataGridViewDatos.TabIndex = 12;
+            // 
+            // btnMostrarDatos
+            // 
+            this.btnMostrarDatos.Location = new System.Drawing.Point(925, 322);
+            this.btnMostrarDatos.Name = "btnMostrarDatos";
+            this.btnMostrarDatos.Size = new System.Drawing.Size(98, 42);
+            this.btnMostrarDatos.TabIndex = 13;
+            this.btnMostrarDatos.Text = "Mostrar";
+            this.btnMostrarDatos.UseVisualStyleBackColor = true;
+            this.btnMostrarDatos.Click += new System.EventHandler(this.btnMostrarDatos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 585);
+            this.ClientSize = new System.Drawing.Size(1333, 585);
+            this.Controls.Add(this.btnMostrarDatos);
+            this.Controls.Add(this.dataGridViewDatos);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.DataGridViewTemperatura);
             this.Controls.Add(this.btnIngresoTemperatura);
@@ -174,6 +199,7 @@
             this.Text = "Departamentos de Guatemala";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartamento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTemperatura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +219,8 @@
         private System.Windows.Forms.Button btnIngresoTemperatura;
         private System.Windows.Forms.DataGridView DataGridViewTemperatura;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridViewDatos;
+        private System.Windows.Forms.Button btnMostrarDatos;
     }
 }
 
