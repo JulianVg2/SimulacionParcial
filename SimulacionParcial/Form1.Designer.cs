@@ -53,66 +53,74 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 66);
+            this.label1.Location = new System.Drawing.Point(29, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 16);
+            this.label1.Size = new System.Drawing.Size(125, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nùmero de Identificaciòn";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 98);
+            this.label2.Location = new System.Drawing.Point(27, 80);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 16);
+            this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Departamento";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(371, 66);
+            this.label3.Location = new System.Drawing.Point(278, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 16);
+            this.label3.Size = new System.Drawing.Size(124, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Temperatura Registrada:";
             // 
             // txtNumeroIde
             // 
-            this.txtNumeroIde.Location = new System.Drawing.Point(224, 66);
+            this.txtNumeroIde.Location = new System.Drawing.Point(168, 54);
+            this.txtNumeroIde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNumeroIde.Name = "txtNumeroIde";
-            this.txtNumeroIde.Size = new System.Drawing.Size(100, 22);
+            this.txtNumeroIde.Size = new System.Drawing.Size(76, 20);
             this.txtNumeroIde.TabIndex = 3;
             // 
             // txtDepartamento
             // 
-            this.txtDepartamento.Location = new System.Drawing.Point(224, 95);
+            this.txtDepartamento.Location = new System.Drawing.Point(168, 77);
+            this.txtDepartamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(100, 22);
+            this.txtDepartamento.Size = new System.Drawing.Size(76, 20);
             this.txtDepartamento.TabIndex = 4;
             // 
             // txtTemperatura
             // 
-            this.txtTemperatura.Location = new System.Drawing.Point(559, 66);
+            this.txtTemperatura.Location = new System.Drawing.Point(419, 54);
+            this.txtTemperatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTemperatura.Name = "txtTemperatura";
-            this.txtTemperatura.Size = new System.Drawing.Size(100, 22);
+            this.txtTemperatura.Size = new System.Drawing.Size(76, 20);
             this.txtTemperatura.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 22);
+            this.label4.Location = new System.Drawing.Point(28, 18);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 20);
+            this.label4.Size = new System.Drawing.Size(207, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Información Departamentos";
             // 
             // btnBotonIngresar
             // 
-            this.btnBotonIngresar.Location = new System.Drawing.Point(42, 170);
+            this.btnBotonIngresar.Location = new System.Drawing.Point(32, 138);
+            this.btnBotonIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBotonIngresar.Name = "btnBotonIngresar";
-            this.btnBotonIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnBotonIngresar.Size = new System.Drawing.Size(56, 19);
             this.btnBotonIngresar.TabIndex = 7;
             this.btnBotonIngresar.Text = "Ingresar";
             this.btnBotonIngresar.UseVisualStyleBackColor = true;
@@ -121,18 +129,20 @@
             // dataGridViewDepartamento
             // 
             this.dataGridViewDepartamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDepartamento.Location = new System.Drawing.Point(39, 236);
+            this.dataGridViewDepartamento.Location = new System.Drawing.Point(29, 192);
+            this.dataGridViewDepartamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewDepartamento.Name = "dataGridViewDepartamento";
             this.dataGridViewDepartamento.RowHeadersWidth = 51;
             this.dataGridViewDepartamento.RowTemplate.Height = 24;
-            this.dataGridViewDepartamento.Size = new System.Drawing.Size(294, 219);
+            this.dataGridViewDepartamento.Size = new System.Drawing.Size(220, 178);
             this.dataGridViewDepartamento.TabIndex = 8;
             // 
             // btnIngresoTemperatura
             // 
-            this.btnIngresoTemperatura.Location = new System.Drawing.Point(374, 170);
+            this.btnIngresoTemperatura.Location = new System.Drawing.Point(280, 138);
+            this.btnIngresoTemperatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIngresoTemperatura.Name = "btnIngresoTemperatura";
-            this.btnIngresoTemperatura.Size = new System.Drawing.Size(103, 23);
+            this.btnIngresoTemperatura.Size = new System.Drawing.Size(77, 19);
             this.btnIngresoTemperatura.TabIndex = 9;
             this.btnIngresoTemperatura.Text = "Ingresar Datos";
             this.btnIngresoTemperatura.UseVisualStyleBackColor = true;
@@ -141,38 +151,42 @@
             // DataGridViewTemperatura
             // 
             this.DataGridViewTemperatura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridViewTemperatura.Location = new System.Drawing.Point(374, 236);
+            this.DataGridViewTemperatura.Location = new System.Drawing.Point(280, 192);
+            this.DataGridViewTemperatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataGridViewTemperatura.Name = "DataGridViewTemperatura";
             this.DataGridViewTemperatura.RowHeadersWidth = 51;
             this.DataGridViewTemperatura.RowTemplate.Height = 24;
-            this.DataGridViewTemperatura.Size = new System.Drawing.Size(335, 219);
+            this.DataGridViewTemperatura.Size = new System.Drawing.Size(251, 178);
             this.DataGridViewTemperatura.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(399, 22);
+            this.label5.Location = new System.Drawing.Point(299, 18);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 20);
+            this.label5.Size = new System.Drawing.Size(185, 17);
             this.label5.TabIndex = 11;
             this.label5.Text = "Temperatura Registrada";
             // 
             // dataGridViewDatos
             // 
             this.dataGridViewDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDatos.Location = new System.Drawing.Point(925, 138);
+            this.dataGridViewDatos.Location = new System.Drawing.Point(694, 112);
+            this.dataGridViewDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewDatos.Name = "dataGridViewDatos";
             this.dataGridViewDatos.RowHeadersWidth = 51;
             this.dataGridViewDatos.RowTemplate.Height = 24;
-            this.dataGridViewDatos.Size = new System.Drawing.Size(373, 178);
+            this.dataGridViewDatos.Size = new System.Drawing.Size(280, 145);
             this.dataGridViewDatos.TabIndex = 12;
             // 
             // btnMostrarDatos
             // 
-            this.btnMostrarDatos.Location = new System.Drawing.Point(925, 322);
+            this.btnMostrarDatos.Location = new System.Drawing.Point(694, 262);
+            this.btnMostrarDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarDatos.Name = "btnMostrarDatos";
-            this.btnMostrarDatos.Size = new System.Drawing.Size(98, 42);
+            this.btnMostrarDatos.Size = new System.Drawing.Size(74, 34);
             this.btnMostrarDatos.TabIndex = 13;
             this.btnMostrarDatos.Text = "Mostrar";
             this.btnMostrarDatos.UseVisualStyleBackColor = true;
@@ -180,9 +194,10 @@
             // 
             // btnOrdenarMayor
             // 
-            this.btnOrdenarMayor.Location = new System.Drawing.Point(1030, 323);
+            this.btnOrdenarMayor.Location = new System.Drawing.Point(772, 262);
+            this.btnOrdenarMayor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOrdenarMayor.Name = "btnOrdenarMayor";
-            this.btnOrdenarMayor.Size = new System.Drawing.Size(106, 41);
+            this.btnOrdenarMayor.Size = new System.Drawing.Size(80, 33);
             this.btnOrdenarMayor.TabIndex = 14;
             this.btnOrdenarMayor.Text = "Ordenar Ascendente";
             this.btnOrdenarMayor.UseVisualStyleBackColor = true;
@@ -190,27 +205,30 @@
             // 
             // btnPromedio
             // 
-            this.btnPromedio.Location = new System.Drawing.Point(928, 394);
+            this.btnPromedio.Location = new System.Drawing.Point(696, 320);
+            this.btnPromedio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPromedio.Name = "btnPromedio";
-            this.btnPromedio.Size = new System.Drawing.Size(95, 42);
+            this.btnPromedio.Size = new System.Drawing.Size(71, 34);
             this.btnPromedio.TabIndex = 15;
             this.btnPromedio.Text = "Mostrar Promedio";
             this.btnPromedio.UseVisualStyleBackColor = true;
+            this.btnPromedio.Click += new System.EventHandler(this.btnPromedio_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1052, 394);
+            this.label6.Location = new System.Drawing.Point(789, 320);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 16;
             this.label6.Text = "label6";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 585);
+            this.ClientSize = new System.Drawing.Size(1000, 475);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPromedio);
             this.Controls.Add(this.btnOrdenarMayor);
@@ -229,6 +247,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Departamentos de Guatemala";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepartamento)).EndInit();

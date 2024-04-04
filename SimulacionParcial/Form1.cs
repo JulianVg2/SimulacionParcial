@@ -57,6 +57,7 @@ namespace SimulacionParcial
             departamentoslista.Add(departamentos);
             MostrarDepartamentos();
             GuardarDepartamentos();
+          
             
         }
 
@@ -93,6 +94,7 @@ namespace SimulacionParcial
             datosdepartamentoslista.Add(datosdepartamento);
             GuardarTemperaturas();
             MostrarTemperaturas();
+
         }
 
         private void btnMostrarDatos_Click(object sender, EventArgs e)
@@ -126,6 +128,25 @@ namespace SimulacionParcial
             dataGridViewDatos.DataSource = null;
             dataGridViewDatos.DataSource = datosdepartamentoslista;
             dataGridViewDatos.Refresh();
+        }
+
+        private void btnPromedio_Click(object sender, EventArgs e)
+        {
+            if (datosdepartamentoslista.Count > 0)
+            {
+                decimal sumaTemperaturas = 0;
+                foreach (var datoDepartamento in datosdepartamentoslista)
+                {
+                    sumaTemperaturas += datoDepartamento.Grados;
+                }
+
+                decimal promedio = sumaTemperaturas / datosdepartamentoslista.Count;
+                label6.Text = $"Promedio de temperaturas: {promedio} °C";
+            }
+            else
+            {
+                label6.Text = "No hay temperaturas registradas.";
+            }
         }
     }
 }
